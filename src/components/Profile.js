@@ -35,7 +35,7 @@ const Profile = () => {
     const decoded = await jwt_decode(token);
 
     axios
-      .get(`http://localhost:8000/api/users/${decoded.user._id}`)
+      .get(`hhttps://the-swell-back-i7o00030s-draosi.vercel.app/api/users/${decoded.user._id}`)
       .then((res) => setUser(res.data));
 
     // Store the user info inside the details state variable
@@ -65,7 +65,7 @@ const Profile = () => {
         <div className="image-surf-infos">
           <div className="circle-image">
             <img
-              src={`http://localhost:8000${user.image}`}
+              src={`https://the-swell-back-i7o00030s-draosi.vercel.app${user.image}`}
               alt=""
               className="img"
             />

@@ -3,7 +3,7 @@ import axios from 'axios'
 // Create a new user
 export const register = abc => {
     return (
-        axios.post('http://localhost:8000/auth/register', {
+        axios.post('https://the-swell-back-i7o00030s-draosi.vercel.app/auth/register', {
         username : abc.username,
         first_name: abc.first_name,
         last_name: abc.last_name,
@@ -24,7 +24,7 @@ export const register = abc => {
 
 // Check if the user exist in the database and if so, sends back its token
 export const login = user => {
-    return axios.post('http://localhost:8000/auth/login', {
+    return axios.post('https://the-swell-back-i7o00030s-draosi.vercel.app/auth/login', {
         email : user.email,
         password : user.password
     })
