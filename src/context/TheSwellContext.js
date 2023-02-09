@@ -70,7 +70,7 @@ export const TheSwellController = ({ children }) => {
   // Fetch TheSwell API / Users
   const fetchUsersData = async () => {
     try {
-      const callData = await axios.get(`https://the-swell-back-i7o00030s-draosi.vercel.app/api/users`);
+      const callData = await axios.get(`http://localhost:8000/api/users`);
       setUsers(callData.data);
     } catch (err) {
       console.log(err);
@@ -84,7 +84,7 @@ export const TheSwellController = ({ children }) => {
   // Fetch TheSwell API / Spots
   const fetchSpotsData = async () => {
     try {
-      const callData = await axios.get(`https://the-swell-back-i7o00030s-draosi.vercel.app/api/spots`);
+      const callData = await axios.get(`http://localhost:8000/api/spots`);
       setSpots(callData.data);
     } catch (err) {
       console.log(err);
@@ -98,7 +98,7 @@ export const TheSwellController = ({ children }) => {
   // Fetch TheSwell API / Comments
   const fetchCommentsData = async () => {
     try {
-      const callData = await axios.get("https://the-swell-back-i7o00030s-draosi.vercel.app/api/comments");
+      const callData = await axios.get("http://localhost:8000/api/comments");
       setComments(callData.data);
     } catch (err) {
       console.log(err);
@@ -112,7 +112,7 @@ export const TheSwellController = ({ children }) => {
   // Fetch TheSwell API / Surveys
   const fetchSurveysData = async () => {
     try {
-      const callData = await axios.get("https://the-swell-back-i7o00030s-draosi.vercel.app/api/surveys");
+      const callData = await axios.get("http://localhost:8000/api/surveys");
       setSurveys(callData.data);
     } catch (err) {
       console.log(err);
