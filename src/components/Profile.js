@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useLocation } from "react";
+import React, { useState, useEffect } from "react";
 import jwt_decode from "jwt-decode";
 import { Link } from "react-router-dom";
 import axios from "axios";
@@ -20,8 +20,7 @@ const Profile = () => {
     image: "",
     role: "",
   };
-
-  const location = useLocation(); 
+  
 
   // Initialize two state variables to update the user info
   const [user, setUser] = useState(initialValue);
@@ -29,7 +28,7 @@ const Profile = () => {
 
   useEffect(() => {
     getProfil();
-  }, [location]);
+  }, []);
 
   // fetch the user info with its id - We get the id thanks to the token
   const getProfil = async () => {
