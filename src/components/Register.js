@@ -17,7 +17,7 @@ const Register = () => {
   const [country, setCountry] = useState("");
   const [level, setLevel] = useState("");
   const [image, setImage] = useState();
-  const [role, setRole] = useState("");
+  // const [role, setRole] = useState("");
 
   const [data, setData] = useState();
 
@@ -40,7 +40,7 @@ const Register = () => {
     formData.append("email", email);
     formData.append("password", password);
     formData.append("level", level);
-    formData.append("role", role);
+    // formData.append("role", role);
 
     // Create a new user and post it into the database - then navigate to the login page
     axios
