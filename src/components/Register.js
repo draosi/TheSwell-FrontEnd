@@ -50,12 +50,8 @@ const Register = () => {
         },
       })
       .then((response) => {
-        if(response) {
         setData(response.data);
         navigate("/login");
-        } else {
-          alert('Impossible to register')
-        }
       })
       .catch((err) => console.log(err));
   };
