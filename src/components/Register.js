@@ -44,7 +44,7 @@ const Register = () => {
 
     // Create a new user and post it into the database - then navigate to the login page
     axios
-      .post("http://localhost:8000/auth/register", formData, {
+      .post("https://the-swell-back-end.vercel.app/auth/register", formData, {
         headers: {
           "content-type": "multipart/form-data",
         },

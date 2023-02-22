@@ -19,7 +19,6 @@ const TheSwellRouter = () => {
 
   useEffect(() => {
   }, [location]);
-  console.log(token)
 
   return (
     <div>
