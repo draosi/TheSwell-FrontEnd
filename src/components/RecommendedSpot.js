@@ -46,7 +46,7 @@ const RecommendedSpot = () => {
   const fetchMyUser = async () => {
     try {
       const callData = await axios.get(
-        `https://the-swell-back-end.vercel.app/api/users/${decoded.user._id}`
+        `https://the-swell-back-end-5ynk.vercel.app/api/users/${decoded.user._id}`
       );
       // Store the data in oneUser state variable
       setOneUser(callData.data);
