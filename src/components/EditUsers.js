@@ -29,7 +29,7 @@ const EditUsers = () => {
   // Fetch the user data and initialize the state with it
   const getUser = () => {
     axios
-      .get(`https://the-swell-back-end-5ynk.vercel.app/api/users/${decoded.user._id}`)
+      .get(`https://the-swell-back.fly.dev/api/users/${decoded.user._id}`)
       .then((res) => {
         setUser({
           first_name: res.data.first_name,
@@ -53,7 +53,7 @@ const EditUsers = () => {
   const editUser = (e) => {
     e.preventDefault();
     axios
-      .put(`https://the-swell-back-end-5ynk.vercel.app/api/users/${id}`, user)
+      .put(`https://the-swell-back.fly.dev/api/users/${id}`, user)
       .then((res) => console.log(res));
     navigate("/profile");
   };

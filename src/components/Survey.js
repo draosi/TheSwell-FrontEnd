@@ -53,7 +53,7 @@ const Survey = () => {
     };
 
     axios
-      .post("https://the-swell-back-end-5ynk.vercel.app/api/surveys", newSurvey, {
+      .post("https://the-swell-back.fly.dev/api/surveys", newSurvey, {
         headers: {
           "content-type": "application/json",
         },

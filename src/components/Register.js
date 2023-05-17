@@ -44,7 +44,7 @@ const Register = () => {
 
     // Create a new user and post it into the database - then navigate to the login page
     axios
-      .post("https://the-swell-back-end-5ynk.vercel.app/auth/register", formData, {
+      .post("https://the-swell-back.fly.dev/auth/register", formData, {
         headers: {
           "content-type": "multipart/form-data",
         },
